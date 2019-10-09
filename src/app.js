@@ -9,6 +9,7 @@ let app = {
 
     getDescription: function () {
         let description = document.querySelector("#description");
+        console.log(description);
         let result = description.innerText;
         return result;
     },

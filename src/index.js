@@ -10,8 +10,8 @@ time.test();
 
 render.renderToDos(app.todos);
 handlers.newToDoButton();
-handlers.submitTodo();
 handlers.deleteTodo();
+handlers.submitTodo();
 
 // time.test();
 

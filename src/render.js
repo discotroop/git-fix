@@ -58,7 +58,6 @@ let render = {
         let title = document.createElement('div');
         let priority = document.createElement("div");
         description.innerText = todo.description;
-        console.log(todo.dueDate)
         date.innerText = todo.dueDate;
         title.innerText = todo.title;
         priority.innerText = todo.priority;

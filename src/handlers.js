@@ -6,23 +6,7 @@ let handlers = {
     consolelogger: function () {
         console.log(todos);
     },
-    // todoModal: function () {
-    //     let modal = document.querySelector(".todoModal");
-    //     let closeButton = document.querySelector(".close-button");
 
-    //     function toggleModal() {
-    //         modal.classList.toggle("show-modal");
-    //     }
-    //     // function windowClick(event) {
-    //     //     if (event.target === this.modal) {
-    //     //         this.toggleModal();
-    //     //     }
-    //     // }
-    //     closeButton.addEventListener("click", toggleModal());
-    //     // window.addEventListener("click", windowClick(e));
-    //     // return this;
-
-    // },
     removeModal: function () {
         let modal = document.querySelector(".todoModal");
         modal.classList.remove("show-modal");
@@ -48,9 +32,10 @@ let handlers = {
         let button = document.querySelector("#todosButton");
         let popup = document.querySelector(".todoModal");
         button.addEventListener("click", function() {
+            console.log(app.todos);
             popup.classList.add("show-modal");
             handlers.todoCloseButton();
-            handlers.submitTodo();
+            // handlers.submitTodo();
             handlers.windowClick();
         });
     },
@@ -58,6 +43,7 @@ let handlers = {
     submitTodo: function () {
         let submit = document.querySelector("#submit");
         submit.addEventListener("click", function() {
+            console.log(app.todos);
             app.buildTodo();
             render.renderToDos(app.todos);
             handlers.expandTodo();
