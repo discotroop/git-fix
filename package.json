@@ -1,0 +1,32 @@
+{
+  "name": "to-do-js",
+  "version": "1.0.0",
+  "description": "To Do List App in Vanilla JS",
+  "main": "index.js",
+  "dependencies": {
+    "date-fns": "^2.4.0",
+    "jQuery": "^1.7.4",
+    "jquery-ui": "^1.12.1",
+    "moment": "^2.24.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-server": "^0.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress --mode=production",
+    "watch": "webpack --progress --watch",
+    "server": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/discotroop/TO-DO-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/discotroop/TO-DO-JS/issues"
+  },
+  "homepage": "https://github.com/discotroop/TO-DO-JS#readme"
+}
