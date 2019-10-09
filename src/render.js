@@ -1,5 +1,6 @@
 import {DOM} from "./initial.js";
 import {app} from "./app.js";
+import {handlers} from "./handlers.js";
 
 let render = {
     currentTodos: app.todos,
@@ -17,6 +18,12 @@ let render = {
         let check = document.createElement("div");
         check.setAttribute("class", "check");
         return check;
+    },
+    createDeleteButton: function () {
+        let deleteButton = document.createElement("span");
+        deleteButton.setAttribute("class", "deleteButton");
+        deleteButton.innerHTML = "&times";
+        return deleteButton
     },
     createPriorityColor: function (todo) {
         if (todo.priorityValue === "1") {
@@ -45,8 +52,10 @@ let render = {
             let todoText = todos[i].title;
             todo.data = i; /* links index to DOM */
             todo.append(todoText);
+            todo.append(this.createDeleteButton());
             todoList.appendChild(todo)
         }
+        handlers.deleteTodo();
     },
 
     createTodoDetails: function (index) {

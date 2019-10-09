@@ -60,12 +60,15 @@ let handlers = {
         })
     },
     deleteTodo: function ()  {
-        let button = document.querySelector("#delete");
-        let index = document.querySelector("#num");
-        button.addEventListener("click", function () {
-            app.deleteTodo(index.valueAsNumber);
-            render.renderToDos(app.todos);
-        })
+        let buttons = document.querySelectorAll(".deleteButton")
+        for (let i = 0; i<buttons.length; i++) {
+            buttons[i].data = i;
+            buttons[i].addEventListener("click", function(e) {
+                app.deleteTodo(e.target.data);
+                render.renderToDos();
+            });
+
+        }
     }
 }
 
