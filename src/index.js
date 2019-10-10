@@ -13,15 +13,23 @@ handlers.newToDoButton();
 handlers.deleteTodo();
 handlers.submitTodo();
 
-// time.test();
+// PRIORITIES //
+// 1, set projects
+// 2. render todos by project
+// 3. make sure you can edit todo from expanded view
 
-// handlers.expandTodo();
-
-// app.deleteTodo(1);
+/* that's the basic functionality it HAS to have */
 
 
-// To Do
+// then move on to refining. at this point this project has sucked a lot of time
+// and I lost a week to vacation so I just need to be moving on. can always tweak it as time
+// goes on ... end story is finalize this by monday at latest and move on!
+
 // set priority
 // set date/time
     // use moment.js 
     /// https://www.sitepoint.com/managing-dates-times-using-moment-js/
+// add projects
+// add local storage memory
+// rework css on todoModal.
+    // maybe css grid... this shit sucks!

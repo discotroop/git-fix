@@ -9,29 +9,31 @@
 <body>
     <div id="content"></div>
     <div class="todoModal">
-      <div class="todoModal-content">"test"
-          <span class="close-button">&times;</span>
-        <div id="todosContainer">
-          <div id="title" contenteditable="true">Title</div> 
+      <div class="todoModal-content">
+        <div id="#">
+          <div>Title: <p id="title" contenteditable="true">Title</p> </div>
           <div id="description" contenteditable="true">Description</div>
-          <input type="text" id="datepicker">
-          <script type="text/javascript">
-            $(function() {
-              $("#datepicker").datepicker({
-               numberOfMonths: 1
-              }); 
-            });
-          </script>
-    
-          <select name="priority" id="priority">
-            <option value=1>High</option>
-            <option value=2>Medium</option>
-            <option value=3>Low</option>
-          </select>
-         
-          <button id="submit">add</button>
+          <div> Priority
+              <select name="priority" id="priority">
+              <option value=1>High</option>
+              <option value=2>Medium</option>
+              <option value=3>Low</option>
+            </select> </div>
         </div>
-
+        <div>
+            <input type="text" id="datepicker">
+            <script type="text/javascript">
+              $(function() {
+                $("#datepicker").datepicker({
+                 numberOfMonths: 1
+                }); 
+              });
+            </script>
+        </div>
+        <div id="modalButtons">
+            <span class="close-button">&times;</span>
+            <button id="submit">Submit</button>
+        </div>
       </div>
   
     </div>
