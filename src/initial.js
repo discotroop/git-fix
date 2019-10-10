@@ -9,6 +9,7 @@ let DOM = {
     sidebarHeader: document.createElement("div"),
     sidebarTitle: document.createElement("h3"),
     sidebarButton: document.createElement("button"),
+    sidebarInput: document.createElement("div"),
     sidebarProjects: document.createElement("div"),
     sidebarProjectsAll: document.createElement("div"),
 
@@ -37,6 +38,7 @@ let DOM = {
         /* set text */
         this.sidebarTitle.innerText = "Projects";
         this.sidebarButton.innerText = "New";
+        this.sidebarInput.innerText = "help"; //"<input id='newProject' type='text'></input> <button id='add'>Submit</button>"
         this.sidebarProjectsAll.innerText = "All";
         this.todosTitle.innerText = "To Do";
         this.todosButton.innerText = "New";
@@ -52,6 +54,7 @@ let DOM = {
         this.sidebar.appendChild(this.sidebarHeader);
         this.sidebarHeader.appendChild(this.sidebarTitle);
         this.sidebarHeader.appendChild(this.sidebarButton);
+        this.sidebar.appendChild(this.sidebarInput);
         this.sidebar.appendChild(this.sidebarProjects);
         this.sidebarProjects.appendChild(this.sidebarProjectsAll);
 

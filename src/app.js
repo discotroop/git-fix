@@ -1,5 +1,6 @@
 let app = { 
     todos: [],
+    project: [],
 
     getTitle: function () {
         let title = document.querySelector("#title");
