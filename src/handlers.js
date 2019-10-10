@@ -67,15 +67,16 @@ let handlers = {
                 app.deleteTodo(e.target.data);
                 render.renderToDos();
             });
-
         }
     },
     newProjectButton: function () {
-        let parent = document.querySelector("#sidebarHeader");
-        parent.innerText = "testing";
-        parent.addEventListener("click", function () {
-            console.log(parent);
-        })
+        let button = document.querySelector("#newProjectButton");
+        let inputDiv = document.querySelector("#sidebarInput");
+        button.addEventListener("click", function() {
+            console.log("clicked");
+            inputDiv.classList.remove("invisible");
+
+        }) 
     }
 }
 
