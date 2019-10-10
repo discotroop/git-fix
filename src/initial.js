@@ -24,23 +24,23 @@ let DOM = {
     styleApp: function () {
         this.sidebar.id = "sidebar";
         this.sidebarHeader.id = "sidebarHeader";
+        this.sidebarButton.id = "newProject";
         this.sidebarProjects.id = "sidebarProjects";
-        this.sidebarProjectsAll.setAttribute("class", "project");
+        // this.sidebarProjectsAll.setAttribute("class", "project");
         this.todosContainer.id = "todosContainer";
         this.todosHeader.id = "todosHeader";
         this.todosTitle.id = "todosTitle";
         this.todosButton.id = "todosButton";
         this.newTodoContainer.id = "newTodoContainer";
-        this.newTodoContainer.setAttribute("class", "invisible");
     },
 
     drawApp: function () {
         /* set text */
         this.sidebarTitle.innerText = "Projects";
         this.sidebarButton.innerText = "New";
-        this.sidebarInput.innerText = "help"; //"<input id='newProject' type='text'></input> <button id='add'>Submit</button>"
+        // this.sidebarInput.innerText = "help"; //"<input id='newProject' type='text'></input> <button id='add'>Submit</button>"
         this.sidebarProjectsAll.innerText = "All";
-        this.todosTitle.innerText = "To Do";
+        this.todosTitle.innerText = "To Do yo";
         this.todosButton.innerText = "New";
 
         this.content.appendChild(this.container);
@@ -54,7 +54,7 @@ let DOM = {
         this.sidebar.appendChild(this.sidebarHeader);
         this.sidebarHeader.appendChild(this.sidebarTitle);
         this.sidebarHeader.appendChild(this.sidebarButton);
-        this.sidebar.appendChild(this.sidebarInput);
+        // this.sidebar.appendChild(this.sidebarInput);
         this.sidebar.appendChild(this.sidebarProjects);
         this.sidebarProjects.appendChild(this.sidebarProjectsAll);
 

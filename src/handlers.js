@@ -69,6 +69,13 @@ let handlers = {
             });
 
         }
+    },
+    newProjectButton: function () {
+        let parent = document.querySelector("#sidebarHeader");
+        parent.innerText = "testing";
+        parent.addEventListener("click", function () {
+            console.log(parent);
+        })
     }
 }
 

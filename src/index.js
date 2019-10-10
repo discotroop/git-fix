@@ -12,6 +12,7 @@ render.renderToDos(app.todos);
 handlers.newToDoButton();
 handlers.deleteTodo();
 handlers.submitTodo();
+handlers.newProjectButton();
 
 // PRIORITIES //
 // 1, set projects
